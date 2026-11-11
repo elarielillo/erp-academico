@@ -51,21 +51,21 @@ VetCore ERP está pensado para resolver estos inconvenientes. Cada área de la c
 Esquema conceptual. No es todavía un diseño técnico definitivo.
 
 ```mermaid
-flowchart TB
-    subgraph Medica["Area medica"]
-        C[Clientes y mascotas]
-        M[Gestion medica]
-        A[Agenda y citas]
+flowchart LR
+    subgraph Medica["Área médica"]
+        C["Clientes y mascotas"]
+        M["Gestión médica"]
+        A["Agenda y citas"]
     end
-    subgraph Logistica["Area logistica"]
-        I[Inventario y almacen]
-        P[Compras y proveedores]
+    subgraph Logistica["Área logística"]
+        I["Inventario y almacén"]
+        P["Compras y proveedores"]
     end
-    subgraph Administrativa["Area administrativa"]
-        F[Finanzas y contabilidad]
-        G[Gestion administrativa]
+    subgraph Administrativa["Área administrativa"]
+        F["Finanzas y contabilidad"]
+        G["Gestión administrativa"]
     end
-    R[Reportes e indicadores]
+    R["Reportes e indicadores"]
 
     C --- M
     C --- A
